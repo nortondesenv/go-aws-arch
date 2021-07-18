@@ -12,5 +12,5 @@ clean:
 	rm -rf ./bin
 test:
 	go test
-deploy: clean vendor build
+deploy: clean build
 	serverless deploy --verbose --force
