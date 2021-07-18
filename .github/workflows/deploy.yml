@@ -25,4 +25,4 @@ jobs:
       - name: CI
         run: make deploy
         env:
-        GOPATH: /home/runner/work/go-aws-arch/go-aws-arch
+          GOPATH: /home/runner/work/go-aws-arch/go-aws-arch
