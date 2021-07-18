@@ -19,10 +19,11 @@ jobs:
         with:
           go-version: 1.16
 
+      - name: Env
+        run: export GOPATH=/home/runner/work/go-aws-arch/go-aws-arch
+
       - name: Go-dep
         run: curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
       - name: CI
         run: make deploy
-        env:
-          GOPATH: /home/runner/work/go-aws-arch/go-aws-arch
